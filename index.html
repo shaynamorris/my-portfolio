@@ -31,6 +31,11 @@
       margin-top: 40px;
     }
 
+    h3 {
+      color: #6d6875;
+      margin-top: 30px;
+    }
+
     p {
       font-size: 18px;
       line-height: 1.6;
@@ -49,6 +54,24 @@
       border-radius: 50%;
       margin: 20px 0;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    /* 👇 FIXED IMAGE SIZE FOR WORK */
+    .work-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 15px auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 12px;
     }
 
     a {
@@ -75,20 +98,23 @@
         visual storytelling, and bringing ideas to life.
       </p>
     </div>
-<div class="card">
-  <h2>My Work</h2>
 
-<img src="design1.jpg">
-<img src="design2.jpg">
-<img src="design3.png">
-<img src="design4.jpg">
+    <div class="card">
+      <h2>My Work</h2>
 
-  <h3 style="margin-top:30px;">Animation</h3>
-  <video controls width="100%" style="border-radius:12px;">
-    <source src="vyond-animation.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+      <h3>Graphic Design</h3>
+      <img src="design1.jpg" class="work-image">
+      <img src="design2.jpg" class="work-image">
+      <img src="design3.png" class="work-image">
+      <img src="design4.jpg" class="work-image">
+
+      <h3>Animation</h3>
+      <video controls>
+        <source src="vyond-animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    </div>
 
     <div class="card">
       <h2>Contact</h2>
