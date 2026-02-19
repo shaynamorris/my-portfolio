@@ -15,21 +15,20 @@ body {
 
 /* HERO */
 .hero {
-  min-height: 90vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #fdf6f9, #f3e8ee);
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 .hero img {
-  width: 170px;
+  width: 160px;
   border-radius: 50%;
-  margin-bottom: 25px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -40,11 +39,11 @@ body {
 
 .hero p {
   font-size: 20px;
-  max-width: 650px;
-  margin-bottom: 25px;
+  max-width: 600px;
 }
 
 .hero-button {
+  margin-top: 30px;
   padding: 14px 30px;
   background: #b5838d;
   color: white;
@@ -60,14 +59,14 @@ body {
 
 /* SECTION */
 .section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 80px 30px;
 }
 
 .section h2 {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   color: #6d6875;
 }
 
@@ -80,7 +79,7 @@ body {
 
 .card {
   background: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0,0,0,0.05);
   transition: 0.3s;
@@ -90,11 +89,7 @@ body {
   transform: translateY(-6px);
 }
 
-.card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
+.card img,
 video {
   width: 100%;
   border-radius: 12px;
@@ -103,7 +98,7 @@ video {
 /* CONTACT */
 .contact {
   text-align: center;
-  background: #ffffff;
+  background: white;
   padding: 60px 20px;
 }
 
@@ -130,48 +125,42 @@ footer {
   <h1>Hello, I’m Shayna 🌸</h1>
   <p>
     Instructional Designer and E-Learning Developer creating structured,
-    visually engaging digital learning experiences for professional environments.
+    visually engaging digital learning experiences.
   </p>
   <a href="#work" class="hero-button">View My Work</a>
 </div>
 
-<!-- PROFILE -->
-<div class="section">
-  <h2>Professional Profile</h2>
-  <p style="text-align:center; max-width:700px; margin:auto;">
-    I specialise in instructional design for healthcare environments.
-    My work combines animation, structured pedagogy, and visual communication
-    to transform complex information into accessible digital training.
-  </p>
+<!-- GRAPHIC DESIGN -->
+<div class="section" id="work">
+  <h2>Graphic Design</h2>
+  <div class="grid">
+    <div class="card"><img src="design1.jpg" alt=""></div>
+    <div class="card"><img src="design2.jpg" alt=""></div>
+    <div class="card"><img src="design3.png" alt=""></div>
+    <div class="card"><img src="design4.jpg" alt=""></div>
+  </div>
 </div>
 
-<!-- PORTFOLIO -->
-<div class="section" id="work">
-  <h2>Portfolio</h2>
-
+<!-- PHOTOGRAPHY / PLANTS -->
+<div class="section">
+  <h2>Photography</h2>
   <div class="grid">
-    <div class="card">
-      <img src="design1.jpg" alt="Design 1">
-    </div>
+    <div class="card"><img src="monstera.jpg" alt="Monstera"></div>
+    <div class="card"><img src="peace-lily.jpg" alt="Peace Lily"></div>
+    <div class="card"><img src="snake-plant.jpg" alt="Snake Plant"></div>
+    <div class="card"><img src="parlor-palm.jpg" alt="Parlor Palm"></div>
+  </div>
+</div>
 
-    <div class="card">
-      <img src="design2.jpg" alt="Design 2">
-    </div>
-
-    <div class="card">
-      <img src="design3.png" alt="Design 3">
-    </div>
-
-    <div class="card">
-      <img src="design4.jpg" alt="Design 4">
-    </div>
-
+<!-- ANIMATION -->
+<div class="section">
+  <h2>Animation</h2>
+  <div class="grid">
     <div class="card">
       <video controls>
         <source src="vyond-animation.mp4" type="video/mp4">
       </video>
     </div>
-
     <div class="card">
       <video controls>
         <source src="motion-graphic.mp4" type="video/mp4">
@@ -183,11 +172,7 @@ footer {
 <!-- CONTACT -->
 <div class="contact">
   <h2>Contact</h2>
-  <p>Email:
-    <a href="mailto:shaynamorris123@gmail.com">
-      shaynamorris123@gmail.com
-    </a>
-  </p>
+  <p>Email: <a href="mailto:shaynamorris123@gmail.com">shaynamorris123@gmail.com</a></p>
 </div>
 
 <footer>
