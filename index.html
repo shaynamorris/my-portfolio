@@ -70,30 +70,29 @@ h2 {
 .design-card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
   object-fit: contain;
-  display: block;
 }
 
 /* ---------- PHOTOGRAPHY ---------- */
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
 .photo-card {
   background: #ffffff;
   border-radius: 20px;
-  overflow: hidden;
+  padding: 15px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 .photo-card img {
   width: 100%;
-  height: 320px;
-  object-fit: cover;
+  height: auto;     /* THIS FIXES YOUR PROBLEM */
+  object-fit: contain;
+  border-radius: 15px;
 }
 
 /* ---------- ANIMATION ---------- */
@@ -122,22 +121,19 @@ video {
 
 <body>
 
-<!-- ABOUT ME -->
+<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
   <div class="about">
-    <img src="profile.jpg" alt="Shayna Morris">
+    <img src="me.jpg" alt="Shayna Morris">
     <div class="about-text">
       <p>
         I am a creative designer and instructional developer with a passion for
-        visual storytelling and digital education. I specialise in graphic design,
-        photography, and animation, creating work that is both visually engaging
-        and purpose-driven.
+        visual storytelling and digital education.
       </p>
       <p>
-        My background in animation and e-learning has strengthened my ability
-        to design content that communicates clearly while maintaining strong
-        visual impact.
+        I specialise in graphic design, photography, and animation,
+        creating visually engaging and purpose-driven work.
       </p>
     </div>
   </div>
