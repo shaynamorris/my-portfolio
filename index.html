@@ -3,195 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shayna Morris | Instructional Designer</title>
+<title>Shayna Morris | Portfolio</title>
 
 <style>
+
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #f3e8ee;
-  color: #4a4a4a;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6dede;
+  color: #333;
 }
 
-/* HERO */
-.hero {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #fdf6f9, #f3e8ee);
+section {
+  padding: 80px 10%;
+}
+
+h2 {
   text-align: center;
-  padding: 40px 20px;
-}
-
-.hero img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  color: #b5838d;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 600px;
-}
-
-.hero-button {
-  margin-top: 25px;
-  padding: 12px 28px;
-  background: #b5838d;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.hero-button:hover {
-  background: #6d6875;
-}
-
-/* SECTIONS */
-.section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 70px 30px;
-}
-
-.section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #6d6875;
   font-size: 32px;
+  margin-bottom: 50px;
+  color: #555;
 }
 
-/* GRID */
-.grid {
+/* ---------- GRAPHIC DESIGN ---------- */
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.design-card {
+  background: #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.design-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- PHOTOGRAPHY ---------- */
+
+.photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-/* CARDS */
-.card {
-  background: white;
-  border-radius: 18px;
+.photo-card {
+  background: #f3f3f3;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
-.card:hover {
-  transform: translateY(-6px);
-}
-
-/* FIX FOR IMAGES */
-.card img {
+.photo-card img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
   display: block;
 }
 
-/* VIDEO FIX */
-.card video {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
+/* ---------- ANIMATION ---------- */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
 }
 
-/* CONTACT */
+video {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ---------- CONTACT ---------- */
+
 .contact {
   text-align: center;
-  background: white;
-  padding: 60px 20px;
+  padding-bottom: 80px;
 }
 
-.contact a {
-  color: #b5838d;
-  font-weight: bold;
-  text-decoration: none;
+.contact p {
+  font-size: 18px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #777;
-}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="me.jpg" alt="Shayna Morris">
-  <h1>Hello, I’m Shayna 🌸</h1>
-  <p>
-    Instructional Designer and E-Learning Developer creating structured,
-    visually engaging digital learning experiences.
-  </p>
-  <a href="#work" class="hero-button">View My Work</a>
-</div>
-
 <!-- GRAPHIC DESIGN -->
-<div class="section" id="work">
+<section>
   <h2>Graphic Design</h2>
-  <div class="grid">
-    <div class="card"><img src="design1.jpg"></div>
-    <div class="card"><img src="design2.jpg"></div>
-    <div class="card"><img src="design3.png"></div>
-    <div class="card"><img src="design4.jpg"></div>
+
+  <div class="design-grid">
+    <div class="design-card">
+      <img src="design1.jpg" alt="Design 1">
+    </div>
+
+    <div class="design-card">
+      <img src="design2.jpg" alt="Design 2">
+    </div>
+
+    <div class="design-card">
+      <img src="design3.png" alt="Design 3">
+    </div>
+
+    <div class="design-card">
+      <img src="design4.jpg" alt="Design 4">
+    </div>
   </div>
-</div>
+</section>
 
 <!-- PHOTOGRAPHY -->
-<div class="section">
+<section>
   <h2>Photography</h2>
-  <div class="grid">
-    <div class="card"><img src="monstera.jpg"></div>
-    <div class="card"><img src="peace-lily.jpg"></div>
-    <div class="card"><img src="snake-plant.jpg"></div>
-    <div class="card"><img src="parlor-palm.jpg"></div>
+
+  <div class="photo-grid">
+
+    <div class="photo-card">
+      <img src="monstera.jpg" alt="Monstera">
+    </div>
+
+    <div class="photo-card">
+      <img src="peace-lily.jpg" alt="Peace Lily">
+    </div>
+
+    <div class="photo-card">
+      <img src="snake-plant.jpg" alt="Snake Plant">
+    </div>
+
+    <div class="photo-card">
+      <img src="parlor-palm.jpg" alt="Parlor Palm">
+    </div>
+
   </div>
-</div>
+</section>
 
 <!-- ANIMATION -->
-<div class="section">
+<section>
   <h2>Animation</h2>
-  <div class="grid">
-    <div class="card">
-      <video controls>
-        <source src="vyond-animation.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="card">
-      <video controls>
-        <source src="motion-graphic.mp4" type="video/mp4">
-      </video>
-    </div>
+
+  <div class="video-grid">
+
+    <video controls>
+      <source src="motion-graphic.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+      <source src="vyond-animation.mp4" type="video/mp4">
+    </video>
+
   </div>
-</div>
+</section>
 
 <!-- CONTACT -->
-<div class="contact">
+<section class="contact">
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:shaynamorris123@gmail.com">shaynamorris123@gmail.com</a></p>
-</div>
-
-<footer>
-© 2026 Shayna Morris | Instructional Designer
-</footer>
+  <p>Email: shaynamorris123@gmail.com</p>
+</section>
 
 </body>
 </html>
