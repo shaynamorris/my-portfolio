@@ -25,7 +25,31 @@ h2 {
   font-size: 32px;
   margin-bottom: 50px;
   color: #555;
-  letter-spacing: 1px;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* ---------- GRAPHIC DESIGN ---------- */
@@ -39,25 +63,16 @@ h2 {
 .design-card {
   background: #ffffff;
   border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 15px;
-}
-
-.design-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 .design-card img {
   width: 100%;
-  height: auto;                 /* keeps image proportional */
-  aspect-ratio: 16 / 9;         /* keeps layout consistent */
-  object-fit: contain;          /* prevents cropping */
-  background-color: #ffffff;    /* clean background if spacing appears */
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   display: block;
-  border-radius: 12px;
 }
 
 /* ---------- PHOTOGRAPHY ---------- */
@@ -73,18 +88,12 @@ h2 {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.photo-card:hover {
-  transform: translateY(-6px);
 }
 
 .photo-card img {
   width: 100%;
   height: 320px;
   object-fit: cover;
-  display: block;
 }
 
 /* ---------- ANIMATION ---------- */
@@ -108,27 +117,43 @@ video {
   padding-bottom: 80px;
 }
 
-.contact p {
-  font-size: 18px;
-}
-
 </style>
 </head>
 
 <body>
+
+<!-- ABOUT ME -->
+<section>
+  <h2>About Me</h2>
+  <div class="about">
+    <img src="profile.jpg" alt="Shayna Morris">
+    <div class="about-text">
+      <p>
+        I am a creative designer and instructional developer with a passion for
+        visual storytelling and digital education. I specialise in graphic design,
+        photography, and animation, creating work that is both visually engaging
+        and purpose-driven.
+      </p>
+      <p>
+        My background in animation and e-learning has strengthened my ability
+        to design content that communicates clearly while maintaining strong
+        visual impact.
+      </p>
+    </div>
+  </div>
+</section>
 
 <!-- GRAPHIC DESIGN -->
 <section>
   <h2>Graphic Design</h2>
 
   <div class="design-grid">
-
     <div class="design-card">
-      <img src="design1.jpg" alt="Stylish Clothes Advertisement Design">
+      <img src="design1.jpg" alt="Stylish Clothes Advertisement">
     </div>
 
     <div class="design-card">
-      <img src="design2.jpg" alt="Nail Polish Advertisement Design">
+      <img src="design2.jpg" alt="Nail Polish Advertisement">
     </div>
 
     <div class="design-card">
@@ -136,9 +161,8 @@ video {
     </div>
 
     <div class="design-card">
-      <img src="design4.jpg" alt="Cosy Furniture Sale Design">
+      <img src="design4.jpg" alt="Furniture Sale Design">
     </div>
-
   </div>
 </section>
 
@@ -147,7 +171,6 @@ video {
   <h2>Photography</h2>
 
   <div class="photo-grid">
-
     <div class="photo-card">
       <img src="monstera.jpg" alt="Monstera Plant">
     </div>
@@ -161,9 +184,8 @@ video {
     </div>
 
     <div class="photo-card">
-      <img src="parlor-palm.jpg" alt="Parlor Palm Plant">
+      <img src="parlor-palm.jpg" alt="Parlor Palm">
     </div>
-
   </div>
 </section>
 
@@ -172,7 +194,6 @@ video {
   <h2>Animation</h2>
 
   <div class="video-grid">
-
     <video controls>
       <source src="motion-graphic.mp4" type="video/mp4">
     </video>
@@ -180,7 +201,6 @@ video {
     <video controls>
       <source src="vyond-animation.mp4" type="video/mp4">
     </video>
-
   </div>
 </section>
 
