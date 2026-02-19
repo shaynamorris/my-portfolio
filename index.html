@@ -1,172 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shayna's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shayna Morris | Instructional Designer</title>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdf6f9;
-      color: #4a4a4a;
-      margin: 0;
-      padding: 0;
-    }
+<style>
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 60px 30px;
-      text-align: center;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fdf6f9;
+  color: #4a4a4a;
+}
 
-    h1 {
-      font-size: 40px;
-      color: #b5838d;
-      margin-bottom: 10px;
-    }
+/* HERO SECTION */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fdf6f9, #f3e8ee);
+  text-align: center;
+  padding: 20px;
+}
 
-    h2 {
-      color: #6d6875;
-      margin-top: 40px;
-    }
+.hero h1 {
+  font-size: 48px;
+  color: #b5838d;
+  margin-bottom: 15px;
+}
 
-    h3 {
-      color: #6d6875;
-      margin-top: 30px;
-    }
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+}
 
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+.hero-button {
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #b5838d;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
 
-    .card {
-      background-color: #ffffff;
-      border-radius: 16px;
-      padding: 30px;
-      margin-top: 30px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
+.hero-button:hover {
+  background: #6d6875;
+}
 
-    .card p {
-      text-align: left;
-    }
+/* SECTION STYLE */
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 30px;
+}
 
-    .profile-pic {
-      width: 180px;
-      border-radius: 50%;
-      margin: 20px 0;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6d6875;
+}
 
-    .work-image {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      margin: 15px auto;
-      display: block;
-      border-radius: 12px;
-    }
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
 
-    video {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 12px;
-    }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
 
-    a {
-      color: #b5838d;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.contact a {
+  color: #b5838d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #777;
+}
+
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <h1>Hello, I’m Shayna 🌸</h1>
+<div class="hero">
+  <h1>Hello, I’m Shayna 🌸</h1>
+  <p>
+    Instructional Designer and E-Learning Developer creating structured,
+    visually engaging digital learning experiences for professional environments.
+  </p>
+  <a href="#work" class="hero-button">View My Work</a>
+</div>
 
-    <img src="me.jpg" alt="Photo of Shayna" class="profile-pic">
+<div class="section">
+  <h2>Professional Profile</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    I specialise in instructional design for healthcare environments.
+    My work combines animation, structured pedagogy, and visual communication
+    to transform complex information into accessible digital training.
+  </p>
+</div>
 
-    <p>Welcome to my little corner of the internet.</p>
+<div class="section" id="work">
+  <h2>Portfolio</h2>
 
-    <!-- Professional Profile -->
+  <div class="grid">
+
     <div class="card">
-      <h2>Professional Profile</h2>
-
-      <p>
-        I am a dedicated instructional designer and e-learning developer with
-        professional experience in the healthcare environment. I specialise in
-        creating engaging, learner-centred digital education that is visually
-        compelling and instructionally sound.
-      </p>
-
-      <p>
-        I hold a <strong>Higher Certificate in Animation and Visual Effects (2022)</strong>
-        from The Open Window and completed a fixed-term internship as an
-        <strong>E-Learning Developer (Instructional Designer)</strong> at Life Healthcare,
-        South Africa (January 2024 – October 2024).
-      </p>
-
-      <p>
-        During this time, I designed and developed interactive online learning
-        content for healthcare professionals, transforming complex information
-        into clear, accessible, and engaging digital experiences.
-      </p>
-
-      <p>
-        My skill set includes interactive course and animation development using
-        Articulate Storyline and Vyond. I am currently working exclusively with
-        <strong>Affinity</strong>, applying a strong visual design approach to support
-        effective learning and storytelling.
-      </p>
+      <img src="design1.jpg" alt="">
     </div>
 
-    <!-- My Work -->
     <div class="card">
-      <h2>My Work</h2>
+      <img src="design2.jpg" alt="">
+    </div>
 
-      <h3>Graphic Design</h3>
-      <img src="design1.jpg" class="work-image" alt="Graphic design example 1">
-      <img src="design2.jpg" class="work-image" alt="Graphic design example 2">
-      <img src="design3.png" class="work-image" alt="Graphic design example 3">
-      <img src="design4.jpg" class="work-image" alt="Graphic design example 4">
+    <div class="card">
+      <img src="design3.png" alt="">
+    </div>
 
-      <h3>Animation</h3>
-      <video controls aria-label="Animated e-learning example">
+    <div class="card">
+      <img src="design4.jpg" alt="">
+    </div>
+
+    <div class="card">
+      <video controls>
         <source src="vyond-animation.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <h3>Motion Animation</h3>
-      <video controls aria-label="Motion graphic portfolio example">
-        <source src="motion-graphic.mp4" type="video/mp4">
-        Your browser does not support the video tag.
       </video>
     </div>
 
-    <!-- Contact -->
     <div class="card">
-      <h2>Contact</h2>
-
-      <p>
-        Email:
-        <a href="mailto:shaynamorris123@gmail.com">
-          shaynamorris123@gmail.com
-        </a>
-      </p>
-
-      <p>
-        Freelance services:
-        <strong>Graphic Design, Advertising, Visual Arts & Communication</strong>
-      </p>
+      <video controls>
+        <source src="motion-graphic.mp4" type="video/mp4">
+      </video>
     </div>
 
   </div>
+</div>
+
+<div class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:shaynamorris123@gmail.com">shaynamorris123@gmail.com</a></p>
+</div>
+
+<footer>
+© 2026 Shayna Morris | Instructional Designer
+</footer>
+
 </body>
 </html>
-
