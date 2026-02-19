@@ -5,26 +5,89 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shayna Morris | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 
 /* ---------- GENERAL ---------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e6dede;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f1f1;
   color: #333;
 }
 
 section {
-  padding: 80px 10%;
+  padding: 100px 10%;
 }
+
+/* ---------- NAVIGATION ---------- */
+
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  text-align: center;
+  padding: 140px 10%;
+  background: white;
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* ---------- HEADINGS ---------- */
 
 h2 {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 50px;
-  color: #555;
+  margin-bottom: 60px;
+  font-weight: 500;
 }
 
 /* ---------- ABOUT ---------- */
@@ -33,74 +96,71 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   justify-content: center;
 }
 
 .about img {
-  width: 250px;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
 .about-text {
   max-width: 600px;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.about-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
+/* ---------- GRID CARDS ---------- */
 
-/* ---------- GRAPHIC DESIGN ---------- */
+.design-grid,
+.photo-grid,
+.video-grid {
+  display: grid;
+  gap: 40px;
+}
 
 .design-grid {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
 }
 
-.design-card {
-  background: #ffffff;
+.photo-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.video-grid {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.design-card,
+.photo-card {
+  background: white;
   border-radius: 20px;
-  padding: 15px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-card:hover,
+.photo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .design-card img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: contain;
-}
-
-/* ---------- PHOTOGRAPHY ---------- */
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
-
-.photo-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 15px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 .photo-card img {
   width: 100%;
-  height: auto;     /* THIS FIXES YOUR PROBLEM */
-  object-fit: contain;
-  border-radius: 15px;
-}
-
-/* ---------- ANIMATION ---------- */
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 video {
@@ -113,7 +173,20 @@ video {
 
 .contact {
   text-align: center;
-  padding-bottom: 80px;
+}
+
+.contact p {
+  font-size: 16px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background: #ece9e9;
+  font-size: 14px;
+  color: #777;
 }
 
 </style>
@@ -121,15 +194,35 @@ video {
 
 <body>
 
+<!-- NAVIGATION -->
+<header>
+  <nav class="nav">
+    <div class="logo">Shayna Morris</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#design">Design</a>
+      <a href="#photo">Photography</a>
+      <a href="#animation">Animation</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Shayna Morris</h1>
+  <p>Graphic Designer • Photographer • Animator</p>
+</section>
+
 <!-- ABOUT -->
-<section>
+<section id="about">
   <h2>About Me</h2>
   <div class="about">
     <img src="me.jpg" alt="Shayna Morris">
     <div class="about-text">
       <p>
-        I am a creative designer and instructional developer with a passion for
-        visual storytelling and digital education.
+        I am a creative designer and instructional developer with a passion
+        for visual storytelling and digital education.
       </p>
       <p>
         I specialise in graphic design, photography, and animation,
@@ -140,22 +233,18 @@ video {
 </section>
 
 <!-- GRAPHIC DESIGN -->
-<section>
+<section id="design">
   <h2>Graphic Design</h2>
-
   <div class="design-grid">
     <div class="design-card">
       <img src="design1.jpg" alt="Stylish Clothes Advertisement">
     </div>
-
     <div class="design-card">
       <img src="design2.jpg" alt="Nail Polish Advertisement">
     </div>
-
     <div class="design-card">
       <img src="design3.png" alt="Nails Promotional Design">
     </div>
-
     <div class="design-card">
       <img src="design4.jpg" alt="Furniture Sale Design">
     </div>
@@ -163,22 +252,18 @@ video {
 </section>
 
 <!-- PHOTOGRAPHY -->
-<section>
+<section id="photo">
   <h2>Photography</h2>
-
   <div class="photo-grid">
     <div class="photo-card">
       <img src="monstera.jpg" alt="Monstera Plant">
     </div>
-
     <div class="photo-card">
       <img src="peace-lily.jpg" alt="Peace Lily Plant">
     </div>
-
     <div class="photo-card">
       <img src="snake-plant.jpg" alt="Snake Plant">
     </div>
-
     <div class="photo-card">
       <img src="parlor-palm.jpg" alt="Parlor Palm">
     </div>
@@ -186,14 +271,12 @@ video {
 </section>
 
 <!-- ANIMATION -->
-<section>
+<section id="animation">
   <h2>Animation</h2>
-
   <div class="video-grid">
     <video controls>
       <source src="motion-graphic.mp4" type="video/mp4">
     </video>
-
     <video controls>
       <source src="vyond-animation.mp4" type="video/mp4">
     </video>
@@ -201,10 +284,14 @@ video {
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<section id="contact" class="contact">
   <h2>Contact</h2>
   <p>Email: shaynamorris123@gmail.com</p>
 </section>
+
+<footer>
+  © 2026 Shayna Morris. All rights reserved.
+</footer>
 
 </body>
 </html>
