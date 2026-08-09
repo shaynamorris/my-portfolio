@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Shayna Morris | Portfolio</title>
@@ -18,6 +20,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
     rel="stylesheet"
   >
+
 
   <style>
 
@@ -176,6 +179,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 35px;
+      align-items: start;
     }
 
     .design-card {
@@ -198,6 +202,19 @@
       object-fit: contain;
       border-radius: 12px;
     }
+
+
+    /* ========================================
+       FOCUS PORTRAIT DESIGN
+    ======================================== */
+
+    .focus-card img {
+      aspect-ratio: auto;
+      height: 420px;
+      object-fit: contain;
+      background: #f9f9f9;
+    }
+
 
     /* Advertising headings */
 
@@ -364,13 +381,20 @@
       .photo-card img {
         height: auto;
       }
+
+      .focus-card img {
+        height: auto;
+      }
+
     }
 
   </style>
+
 </head>
 
 
 <body>
+
 
   <!-- ========================================
        NAVIGATION
@@ -385,11 +409,13 @@
       </div>
 
       <div class="nav-links">
+
         <a href="#about">About</a>
         <a href="#design">Design</a>
         <a href="#photo">Photography</a>
         <a href="#animation">Animation</a>
         <a href="#contact">Contact</a>
+
       </div>
 
     </nav>
@@ -405,7 +431,9 @@
 
     <h1>Shayna Morris</h1>
 
-    <p>Graphic Designer • Animator</p>
+    <p>
+      Graphic Designer • Animator
+    </p>
 
     <a href="#contact" class="cta-btn">
       Work With Me
@@ -539,7 +567,7 @@
       </div>
 
 
-      <!-- ORANGE POLISH ADVERTISEMENT -->
+      <!-- ORANGE NAIL POLISH ADVERTISEMENT -->
 
       <div class="design-card">
 
@@ -554,6 +582,26 @@
 
         <p class="design-category">
           Beauty Product Advertising
+        </p>
+
+      </div>
+
+
+      <!-- FOCUS ADVERTISEMENT -->
+
+      <div class="design-card focus-card">
+
+        <img
+          src="Focus.jpg"
+          alt="Focus creative beauty advertisement"
+        >
+
+        <h3 class="design-title">
+          Focus Advertisement
+        </h3>
+
+        <p class="design-category">
+          Creative Advertising
         </p>
 
       </div>
@@ -575,6 +623,8 @@
     <div class="photo-grid">
 
 
+      <!-- MONSTERA -->
+
       <div class="photo-card">
 
         <img
@@ -584,6 +634,8 @@
 
       </div>
 
+
+      <!-- PEACE LILY -->
 
       <div class="photo-card">
 
@@ -595,6 +647,8 @@
       </div>
 
 
+      <!-- SNAKE PLANT -->
+
       <div class="photo-card">
 
         <img
@@ -604,6 +658,8 @@
 
       </div>
 
+
+      <!-- PARLOR PALM -->
 
       <div class="photo-card">
 
@@ -631,6 +687,8 @@
     <div class="video-grid">
 
 
+      <!-- MOTION GRAPHIC -->
+
       <video controls>
 
         <source
@@ -642,6 +700,8 @@
 
       </video>
 
+
+      <!-- VYOND ANIMATION -->
 
       <video controls>
 
@@ -669,10 +729,13 @@
     <h2>Contact</h2>
 
     <p>
+
       Email:
+
       <a href="mailto:shaynamorris123@gmail.com">
         shaynamorris123@gmail.com
       </a>
+
     </p>
 
   </section>
@@ -683,5 +746,12 @@
   ======================================== -->
 
   <footer>
+
     © 2026 Shayna Morris. All rights reserved.
+
   </footer>
+
+
+</body>
+
+</html>
